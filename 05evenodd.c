@@ -13,7 +13,7 @@ int main()
     else
     {
         printf("Your Number is Not Divisiable by : 5");
-    }
+    }   
 
     return 0;
 }

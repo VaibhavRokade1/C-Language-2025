@@ -1,0 +1,16 @@
+
+-----------------------------------------------------
+-                  Student Result                   -
+-----------------------------------------------------
+		Roll No       : 423
+		Student Name  : Vaibhav
+		Subject Name  : marathi
+		Subject Marks : 89.00
+		Subject Name  : english
+		Subject Marks : 76.00
+		Subject Name  : it
+		Subject Marks : 98.00
+		Total Marks   : 263.00
+		Avg Marks     : 87.67
+		Grade         : 'B'
+-----------------------------------------------------
