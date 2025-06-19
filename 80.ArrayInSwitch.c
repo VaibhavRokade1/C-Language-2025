@@ -2,7 +2,7 @@
 int main()
 {
 
-    int a[100], i, j, key, pos, cnt, n, ch, flag;
+    int a[100], i, j, key, pos, cnt = 0, n, ch, flag;
 
     printf("How many numbers you wants to enter : ");
     scanf("%d", &n);
@@ -56,7 +56,7 @@ int main()
             printf("Updated Array:\n");
             for (i = 0; i < n; i++)
             {
-                printf("%d", a[i]);
+                printf(" %d", a[i]);
             }
 
             break;
@@ -67,27 +67,28 @@ int main()
 
             for (i = 0; i < n; i++)
             {
-                if (a[i] == key)
+                if (key == a[i])
                 {
                     for (j = i; j < n - 1; j++)
                     {
-                        a[j] == a[j + 1];
+                        a[j] = a[j + 1];
                     }
                     n--;
-                    i--;
+                    break;
                 }
             }
 
             printf("Updated Array:\n");
             for (i = 0; i < n; i++)
             {
-                printf("%d", a[i]);
+                printf(" %d", a[i]);
             }
 
             break;
         case 5: // 5.Count
 
             printf("Enter key to count repition : \n");
+            scanf("%d", &key);
             for (i = 0; i < n; i++)
             {
                 if (key == a[i])
@@ -95,10 +96,11 @@ int main()
                     cnt++;
                 }
             }
-            printf("Count of %d:\n %d", key, cnt);
+            printf("Count of %d is: %d", key, cnt);
+            break;
         case 6: // reverse
 
-            for (i = 0; i < n; i++)
+            for (i = 0; i < n / 2; i++)
             {
                 int temp = a[i];
                 a[i] = a[n - i - 1];
@@ -107,12 +109,11 @@ int main()
             printf("Reverse  Array:\n");
             for (i = 0; i < n; i++)
             {
-                printf("%d", a[i]);
+                printf("%d ", a[i]);
             }
-
             break;
         case 7:
-            break;
+            return 0;
         default:
             printf("Invalid Choice !!");
             break;
