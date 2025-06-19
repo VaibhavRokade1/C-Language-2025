@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
     while (flag)
     {
         flag = 0;
-        for (j = 0; j < n - j - 1; j++)
+        for (j = 0; j < n - i - 1; j++)
         {
             if (a[j] > a[j + 1])
             {
@@ -36,8 +36,7 @@ int main(int argc, char const *argv[])
         printf("%d", a[i]);
     }
 
-    
-    flag = 0;
+        flag = 0;
     low = 0;
     high = n - 1;
     while (low <= high)
