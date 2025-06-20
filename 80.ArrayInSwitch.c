@@ -97,6 +97,7 @@ int main()
                 }
             }
             printf("Count of %d is: %d", key, cnt);
+            cnt = 0;
             break;
         case 6: // reverse
 
